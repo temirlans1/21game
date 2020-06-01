@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/styles.css';
+import './fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf';
+import './fonts/Bruno Ace SC Regular.ttf';
 
 ReactDOM.render(
   <React.StrictMode>

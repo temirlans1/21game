@@ -1,0 +1,121 @@
+$mygreen: #00ffb0;
+$nav-text-color: #404040;
+$nav-height: 60px;
+$nav-item-width: 90px;
+
+.mySection {
+  height: 100vh;
+  display: flex;
+  background-color: floralwhite;
+  .container-fluid {
+    padding-top: $nav-height;
+    .row {
+      margin: 0;
+      position: relative;
+    }
+  }
+}
+
+.navbar {
+  width: 100%;
+  padding: 0px 100px 0 50px;
+  margin: 0;
+  background-color: $mygreen;
+  height: $nav-height;
+}
+
+.navbar-brand {
+  background-color: floralwhite;
+  height: 100%;
+  width: $nav-height;
+  font-family: Bruno Ace SC;
+  font-size: 25;
+  text-align: center;
+  line-height: 50px;
+  margin: 0;
+}
+
+.nav-item {
+  padding-top: 0;
+  margin: 0;
+  width: $nav-item-width;
+  height: $nav-height;
+  .active {
+    padding-top: 0;
+    margin: 0;
+    background-color: floralwhite;
+    height: $nav-height;
+  }
+}
+
+.nav-link {
+  padding-top: 0;
+  margin: 0;
+  font-size: 22px;
+  line-height: 60px;
+  height: 0;
+  font-family: Comfortaa;
+  text-align: center;
+  color: $nav-text-color;
+}
+
+
+$gameCardbg: #E9E4D9;
+
+
+#hpGameCard1 {
+  width: 20vw;
+  height: 20vw;
+  background-color: $gameCardbg;
+  border: solid $mygreen 1vw;
+  border-radius: 1.5vw;
+  -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.25);
+  box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.25);
+  z-index: 3;
+}
+
+
+#hpGameCard2 {
+  position: absolute;
+  top: -7.5vw;
+  right: 15vw;
+  width: 15vw;
+  height: 15vw;
+  background-color: $gameCardbg;
+  border: solid $mygreen 1vw;
+  border-radius: 1.5vw;
+  -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.25);
+  box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.25);
+  z-index: 2;
+}
+#hpGameCard3 {
+  position: absolute;
+  margin-top: -5vw;
+  margin-left: 10vw;
+  width: 10vw;
+  height: 10vw;
+  background-color: $gameCardbg;
+  border: solid $mygreen 1vw;
+  border-radius: 1.5vw;
+  -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.25);
+  box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.25);
+  z-index: 1;
+}
+#hpGameCard4 {
+  position: absolute;
+  float: right;
+  margin-right: -55px;
+  margin-top: 75px;
+  width: 200px;
+  height: 200px;
+  background-color: $gameCardbg;
+  border: solid $mygreen 1vw;
+  border-radius: 1.5vw;
+  -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.25);
+  box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.25);
+  z-index: 1;
+}
