@@ -46,7 +46,6 @@ class MyNavbar extends Component {
     return (
       <Navbar fixed="top" expand="md" light>
         <NavbarBrand href="/">21</NavbarBrand>
-        <NavbarToggler onClick={this.toggle}/>
         <Collapse isOpen={this.state.isOpen} id="navContent" navbar>
           <Nav className="ml-auto" navbar>
             <NavItem id="homeNav">

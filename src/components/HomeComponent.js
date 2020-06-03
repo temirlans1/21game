@@ -8,7 +8,7 @@ class Home extends Component {
       <div id="homeSection" className="mySection">
         <Container fluid>
           <Row>
-            <div className="col-12 col-md-6" id="cardsGroup">
+            <div className="col-12 col-xl-6" id="cardsGroup">
               <div className="gameCard type21">
                 <div className="innerCard">
                   <h2 className="cardNumber firstCard">21</h2>
@@ -25,15 +25,19 @@ class Home extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6" id="homePageText">
-              <div className="text1">test your mind</div>
-              <div className="text2">make as few attempts as possible</div>
+            <div className="col-12 col-xl-6" id="homePageText">
+              <div className="textsGroup">
+                <div className="text1">test your mind</div>
+                <div className="text2">make as few</div>
+                <div className="text2">attempts as possible</div>
+              </div>
+              
             </div>
           </Row>
-          <Row>
+          <Row className="toRules">
             <a className="toRules" href="#rulesSection">
-              <p>go</p>
-              <img src={arrowDown}></img>
+              <div>rules</div>
+              <img src={arrowDown} alt="rules"></img>
             </a>
           </Row>
         </Container>
