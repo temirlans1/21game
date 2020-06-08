@@ -5,8 +5,10 @@ $ruleImageColor: #c4c4c4;
 $nav-text-color: #404040;
 $nav-height: 6vh;
 $nav-item-width: 10vh;
+$main-font: Bruno Ace SC;
 
 .mySection {
+  max-width: 1024px;
   height: 100vh;
   display: flex;
   background-color: floralwhite;
@@ -225,6 +227,18 @@ a:hover {
     font-size: 5vw;
     line-height: 5vh;
   }
+}
+
+.hidden {
+  opacity: 0;
+}
+.showTime {
+  @keyframes ruleshowAnimation {
+    from { opacity: 0;}
+    to { opacity: 1;}
+  }
+  animation-name: ruleshowAnimation;
+  animation-duration: 1s;
 }
 
 .rule1 {
@@ -599,6 +613,130 @@ a:hover {
   height: 4vh;
 }
 
+
+.rankings {
+  height: 48vh;
+  .rankingText {
+    padding-top: 2vh;
+    width: 100%;
+    font-family: $main-font;
+    font-size: 5vw;
+    text-align: center;
+  }
+  .rankingTable {
+    padding-left: 10%;
+    width: 90%;
+    height: 35vh;
+  }
+}
+
+.mainGame {
+  max-width: 100vw;
+  height: 30vh;
+  position: relative;
+  overflow-x: hidden;
+  .moveOrder {
+    width: 100%;
+    height: 14vh;
+    margin-bottom: -7vh;
+    .startingCard {
+      position: absolute;
+      left: 50%;
+      margin-left: -7vh;
+      width: 14vh;
+      height: 14vh;
+      z-index: 2;
+      background-color: $green;
+      border-radius: 1vh;
+      .innerCard {
+        position: absolute;
+        margin: 0.8vh 0.8vh 0.8vh 0.8vh;
+        width: 12.4vh;
+        height: 12.4vh;
+        background-color: $gameCardbg;
+        border-radius: 0.5vh;
+        z-index: 3;
+        .startingCardNumber {
+          text-align: center;
+          font-family: Bruno Ace SC;  
+          font-size: 3vh;
+          line-height: 13vh;
+          z-index: 5;
+        }
+      }
+    }
+  }
+  .cardsRow {
+    height: 23vh;
+    margin-left: -5vw;
+    margin-right: -5vw;
+    width: 110vw;
+    background-color: $ruleImageColor;
+    border: 1vw solid $green;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    z-index: 1;
+  }
+}
+
+.underGameText {
+  height: 15vh;
+  .orderAskText {
+    padding-top: 2vh;
+    width: 100%;
+    font-family: $main-font;
+    font-size: 5vw;
+    text-align: center;
+  }
+  .orderBtn {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    font-family: Bruno Ace SC;
+    font-size: 2vh;
+    width: 30vw;
+    height: 5vh;
+    line-height: 4vh;
+    border: 1vw solid $green;
+    border-radius: 15vw;
+    -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0,0,0,0.25);
+    -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0,0,0,0.25);
+    box-shadow: -1vw 1vw 0.5vw 0 rgba(0,0,0,0.25);
+    background-color: floralwhite;
+    @keyframes orderSelectAnimationFirst {
+      from {
+        background-color: $green;
+      }
+      to {
+        background-color: floralwhite;
+      }
+    }
+    @keyframes orderSelectAnimationSecond {
+      from {
+        background-color: floralwhite;
+      }
+      to {
+        background-color: $green;
+      }
+    }
+    &.first {
+      margin-left: 15vw;
+      animation-name: orderSelectAnimationFirst;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-out;
+    }
+    &.second {
+      margin-left: 55vw;
+      animation-name: orderSelectAnimationSecond;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in;
+    }
+  }
+}
 
 // For desktop
 @media (min-width: 1025px) {

@@ -3,6 +3,26 @@ import { Container, Row } from 'reactstrap';
 import arrowDown from '../icons/arrowDown.png';
 
 class Rules extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      ruleOrder: 1,
+      btnText: "next"
+    }
+    this.nextRule = this.nextRule.bind(this);
+  }
+
+  nextRule() {
+    this.setState({
+      ruleOrder: this.state.ruleOrder + 1
+    });
+    if(this.state.ruleOrder === 2) {
+      this.setState({
+        btnText: "start"
+      });
+    }
+  }
+
   render() {
     return (
       <div id="rulesSection" className="mySection">
@@ -29,7 +49,7 @@ class Rules extends Component {
               </div>
             </div>
           </Row>
-          <Row className="rule2">
+          <Row className={(this.state.ruleOrder > 1) ? "rule2 showTime" : "rule2 hidden"}>
             <div className="rule1Text">
             An opponent will choose from the next 3 numbers. The chosen number can be maximum 21
             </div>
@@ -59,7 +79,7 @@ class Rules extends Component {
               </div>
             </div>
           </Row>
-          <Row className="rule3">
+          <Row className={(this.state.ruleOrder > 2) ? "rule3 showTime" : "rule3 hidden"}>
             <div className="rule1Text">
             The player who choose 21 will lose
 The goal of the game is to leave the opponent a choice of only 21
@@ -79,7 +99,7 @@ The goal of the game is to leave the opponent a choice of only 21
           </Row>
           
           <Row className="startButton">
-            <a href="#gameSection">start</a>
+            <a onClick={() => this.nextRule()} href={(this.state.ruleOrder > 3) ? "#gameSection" : null}>{this.state.btnText}</a>
 
           </Row>
         </Container>
