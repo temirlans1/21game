@@ -99,7 +99,7 @@ The goal of the game is to leave the opponent a choice of only 21
           </Row>
           
           <Row className="startButton">
-            <a onClick={() => this.nextRule()} href={(this.state.ruleOrder > 3) ? "#gameSection" : null}>{this.state.btnText}</a>
+            <a onClick={() => this.nextRule()} href={(this.state.ruleOrder > 3) ? "#gameSection" : "#ruleSection"}>{this.state.btnText}</a>
 
           </Row>
         </Container>
