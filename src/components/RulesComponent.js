@@ -28,16 +28,16 @@ class Rules extends Component {
       <div id="rulesSection" className="mySection">
         <Container fluid>
           <Row className="rule1">
-            <div className="rule1Text">
+            <div className="col-12 col-xl-6 rule1Text">
               Players can choose only one number
             </div>
-            <div className="rule1Image">
+            <div className="col-12 col-xl-6 rule1Image">
               <div className="gameCard type3">
                 <div className="innerCard">
                   <div className="cardNumber firstCard">3</div>
                 </div>
               </div>
-              <div className="gameCard type2">
+              <div className="gameCard type2" >
                 <div className="innerCard">
                   <div className="cardNumber secondCard">2</div>
                 </div>
@@ -50,10 +50,10 @@ class Rules extends Component {
             </div>
           </Row>
           <Row className={(this.state.ruleOrder > 1) ? "rule2 showTime" : "rule2 hidden"}>
-            <div className="rule1Text">
-            An opponent will choose from the next 3 numbers. The chosen number can be maximum 21
+            <div className="col-12 col-xl-6 rule1Text">
+              An opponent will choose from the next 3 numbers. The chosen number can be maximum 21
             </div>
-            <div className="rule1Image">
+            <div className="col-12 col-xl-6 order-lg-first rule1Image">
               <div className="gameCard type3">
                 <div className="innerCard">
                   <div className="cardNumber greenCard">3</div>
@@ -80,11 +80,11 @@ class Rules extends Component {
             </div>
           </Row>
           <Row className={(this.state.ruleOrder > 2) ? "rule3 showTime" : "rule3 hidden"}>
-            <div className="rule1Text">
+            <div className="col-12 col-xl-6  rule1Text">
             The player who choose 21 will lose
 The goal of the game is to leave the opponent a choice of only 21
             </div>
-            <div className="rule1Image">
+            <div className="col-12 col-xl-6  rule1Image">
               <div className="gameCard type21red">
                 <div className="innerCard">
                   <div className="cardNumber firstCard">21</div>
@@ -92,7 +92,7 @@ The goal of the game is to leave the opponent a choice of only 21
               </div>
               <div className="gameCard type20green">
                 <div className="innerCard">
-                  <div className="cardNumber secondCard">20</div>
+                  <div className="cardNumber firstCard">20</div>
                 </div>
               </div>
             </div>

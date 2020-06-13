@@ -1,5 +1,4 @@
 .mySection {
-  max-width: 1024px;
   height: 100vh;
   display: flex;
   background-color: floralwhite; }
@@ -49,789 +48,98 @@
   text-align: center;
   color: #404040; }
 
-#cardsGroup {
-  padding: 0 5vw 0 0;
-  height: 40vh;
-  position: relative; }
-
-.gameCard {
-  position: relative;
-  top: 50%;
-  border-radius: 2vw;
-  -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-  box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
-
-@keyframes card21Anim {
-  from {
-    margin-right: 30vw;
-    margin-left: -30vw; }
-  to {
-    margin-right: 0vw;
-    margin-left: 0vw; } }
-
-@keyframes card19Anim {
-  from {
-    margin-left: 25vw; }
-  to {
-    margin-left: 3vw; } }
-  .gameCard.type21 {
-    float: right;
-    width: 40vw;
-    height: 40vw;
-    margin-top: -20vw;
-    z-index: 3;
-    animation-name: card21Anim;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
-    background-color: #00ffb0; }
-    .gameCard.type21 .innerCard {
-      position: absolute;
-      margin: 2vw 2vw 2vw 2vw;
-      width: 36vw;
-      height: 36vw;
-      background-color: #E9E4D9;
-      border-radius: 1vw;
-      z-index: 4; }
-  .gameCard.type20 {
-    float: right;
-    margin: 2.5vw -5vw 0 -30vw;
-    width: 35vw;
-    height: 35vw;
-    margin-top: -17.5vw;
-    z-index: 2;
-    background-color: #e9df00; }
-    .gameCard.type20 .innerCard {
-      position: absolute;
-      margin: 1.75vw 1.75vw 1.75vw 1.75vw;
-      width: 31.5vw;
-      height: 31.5vw;
-      background-color: #E9E4D9;
-      border-radius: 1vw;
-      z-index: 4; }
-  .gameCard.type19 {
-    float: left;
-    margin: 5vw -30vw 0 3vw;
-    width: 30vw;
-    height: 30vw;
-    margin-top: -15vw;
-    z-index: 1;
-    animation-name: card19Anim;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
-    background-color: #e9df00; }
-    .gameCard.type19 .innerCard {
-      position: absolute;
-      margin: 1.5vw 1.5vw 1.5vw 1.5vw;
-      width: 27vw;
-      height: 27vw;
-      background-color: #E9E4D9;
-      border-radius: 1vw;
-      z-index: 4; }
-
-.cardNumber {
-  text-align: center;
-  font-family: Bruno Ace SC; }
-  .cardNumber.firstCard {
-    font-size: 9.5vw;
-    line-height: 38vw;
-    z-index: 5; }
-  .cardNumber.secondCard {
-    font-size: 8.4vw;
-    line-height: 33vw;
-    z-index: 4; }
-  .cardNumber.thirdCard {
-    font-size: 7.2vw;
-    line-height: 28vw;
-    z-index: 3; }
-
-@keyframes hpTextAnim {
-  from {
-    opacity: 0;
-    padding-top: 10vh; }
-  to {
-    opacity: 1;
-    padding-top: 0; } }
-
-#homePageText {
-  padding: 5vh 0 0 0;
-  height: 40vh;
-  position: relative;
-  font-family: Bruno Ace SC;
-  text-align: center; }
-  #homePageText .text1 {
-    font-size: 9vw;
-    padding-bottom: 5vh; }
-  #homePageText .text2 {
-    font-size: 7vw; }
-
-.textsGroup {
-  animation-name: hpTextAnim;
-  animation-duration: 2s;
-  animation-timing-function: ease-out; }
-
-a {
-  color: black;
-  text-decoration: none; }
-
-a:hover {
-  color: black;
-  text-decoration: none; }
-
-.toRules {
-  background-color: #00ffb0;
-  bottom: 0;
-  width: 100%;
-  font-family: Bruno Ace SC;
-  height: 10vh;
-  position: absolute !important;
-  text-align: center;
-  align-items: center; }
-
-@keyframes arrowDownAnimation {
-  from {
-    padding-top: 0vh; }
-  to {
-    padding-top: 0.8vh; } }
-  .toRules img {
-    animation-name: arrowDownAnimation;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate; }
-  .toRules div {
-    font-size: 5vw;
-    line-height: 5vh; }
-
-.hidden {
-  opacity: 0; }
-
-.showTime {
-  animation-name: ruleshowAnimation;
-  animation-duration: 1s; }
-
-@keyframes ruleshowAnimation {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-.rule1 {
-  height: 23vh; }
-  .rule1 .rule1Text {
-    line-height: 5vh;
-    font-size: 4vw;
-    text-align: center;
-    width: 100%;
-    height: 5vh;
-    font-family: Bruno Ace SC; }
-  .rule1 .rule1Image {
-    position: relative;
-    width: 100%;
-    height: 18vh;
-    background-color: #c4c4c4; }
-    .rule1 .rule1Image .gameCard {
-      position: absolute;
-      top: 50%;
-      border-radius: 1vw;
-      -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-      -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-      box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
-
-@keyframes rule1Animation {
-  from {
-    margin-top: -12.5vw; }
-  to {
-    margin-top: -15.5vw; } }
-      .rule1 .rule1Image .gameCard.type3 {
-        right: 5vw;
-        width: 25vw;
-        height: 25vw;
-        margin-top: -12.5vw;
-        z-index: 3;
-        background-color: #00ffb0;
-        -webkit-box-shadow: -2vw 2vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-        -moz-box-shadow: -2vw 2vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-        box-shadow: -2vw 2vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-        animation-name: rule1Animation;
-        animation-duration: 0.5s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-timing-function: ease-in-out; }
-        .rule1 .rule1Image .gameCard.type3 .innerCard {
-          position: absolute;
-          margin: 1vw 1vw 1vw 1vw;
-          width: 23vw;
-          height: 23vw;
-          background-color: #E9E4D9;
-          border-radius: 1vw;
-          z-index: 4; }
-      .rule1 .rule1Image .gameCard.type2 {
-        right: 38vw;
-        width: 23vw;
-        height: 23vw;
-        margin-top: -11.5vw;
-        z-index: 3;
-        background-color: #e9df00; }
-        .rule1 .rule1Image .gameCard.type2 .innerCard {
-          position: absolute;
-          margin: 1vw 1vw 1vw 1vw;
-          width: 21vw;
-          height: 21vw;
-          background-color: #E9E4D9;
-          border-radius: 1vw;
-          z-index: 4; }
-      .rule1 .rule1Image .gameCard.type1 {
-        left: 8vw;
-        width: 23vw;
-        height: 23vw;
-        margin-top: -11.5vw;
-        z-index: 3;
-        background-color: #e9df00; }
-        .rule1 .rule1Image .gameCard.type1 .innerCard {
-          position: absolute;
-          margin: 1vw 1vw 1vw 1vw;
-          width: 21vw;
-          height: 21vw;
-          background-color: #E9E4D9;
-          border-radius: 1vw;
-          z-index: 4; }
-    .rule1 .rule1Image .cardNumber {
-      text-align: center;
-      font-family: Bruno Ace SC; }
-      .rule1 .rule1Image .cardNumber.firstCard {
-        font-size: 5vw;
-        line-height: 23vw;
-        z-index: 5; }
-      .rule1 .rule1Image .cardNumber.secondCard {
-        font-size: 4.5vw;
-        line-height: 23vw;
-        z-index: 4; }
-      .rule1 .rule1Image .cardNumber.thirdCard {
-        font-size: 4.5vw;
-        line-height: 23vw;
-        z-index: 3; }
-
-.rule2 {
-  height: 32vh; }
-  .rule2 .rule1Text {
-    padding-top: 2vh;
-    font-size: 4vw;
-    text-align: center;
-    width: 100%;
-    height: 12vh;
-    font-family: Bruno Ace SC; }
-  .rule2 .rule1Image {
-    position: relative;
-    width: 100%;
-    height: 18vh;
-    background-color: #c4c4c4; }
-    .rule2 .rule1Image .gameCard {
-      position: absolute;
-      top: 50%;
-      border-radius: 1vw;
-      -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-      -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-      box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
-      .rule2 .rule1Image .gameCard.type3 {
-        left: 10vw;
-        width: 15vw;
-        height: 15vw;
-        margin-top: -7.5vw;
-        z-index: 3;
-        background-color: #00ffb0;
-        -webkit-box-shadow: -1.5vw 1.5vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-        -moz-box-shadow: -1.5vw 1.5vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-        box-shadow: -1.5vw 1.5vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
-        .rule2 .rule1Image .gameCard.type3 .innerCard {
-          position: absolute;
-          margin: 0.5vw 0.5vw 0.5vw 0.5vw;
-          width: 14vw;
-          height: 14vw;
-          background-color: #E9E4D9;
-          border-radius: 1vw;
-          z-index: 4; }
-      .rule2 .rule1Image .gameCard.typeYellow {
-        width: 13vw;
-        height: 13vw;
-        margin-top: -6.5vw;
-        z-index: 3;
-        background-color: #e9df00; }
-        .rule2 .rule1Image .gameCard.typeYellow .innerCard {
-          position: absolute;
-          margin: 0.4vw 0.4vw 0.4vw 0.4vw;
-          width: 12vw;
-          height: 12vw;
-          background-color: #E9E4D9;
-          border-radius: 1vw;
-          z-index: 4; }
-
-@keyframes cardArrowDownAnimation {
-  from {
-    margin-top: -4vh; }
-  to {
-    margin-top: -2vh; } }
-        .rule2 .rule1Image .gameCard.typeYellow img {
-          animation-name: arrowDownAnimation;
-          animation-duration: 0.5s;
-          animation-iteration-count: infinite;
-          animation-direction: alternate;
-          position: absolute;
-          margin-top: -4vh;
-          left: 50%;
-          margin-left: -12px; }
-        .rule2 .rule1Image .gameCard.typeYellow.card4 {
-          left: 33vw; }
-        .rule2 .rule1Image .gameCard.typeYellow.card5 {
-          left: 55vw; }
-        .rule2 .rule1Image .gameCard.typeYellow.card6 {
-          left: 77vw; }
-    .rule2 .rule1Image .cardNumber {
-      text-align: center;
-      font-family: Bruno Ace SC; }
-      .rule2 .rule1Image .cardNumber.greenCard {
-        font-size: 4vw;
-        line-height: 15vw;
-        z-index: 5; }
-      .rule2 .rule1Image .cardNumber.yellowCard {
-        font-size: 3.5vw;
-        line-height: 13vw;
-        z-index: 4; }
-
-.rule3 {
-  height: 32vh; }
-  .rule3 .rule1Text {
-    padding-top: 2vh;
-    font-size: 4vw;
-    text-align: center;
-    width: 100%;
-    height: 12vh;
-    font-family: Bruno Ace SC; }
-  .rule3 .rule1Image {
-    position: relative;
-    width: 100%;
-    height: 18vh;
-    background-color: #c4c4c4; }
-    .rule3 .rule1Image .gameCard {
-      position: absolute;
-      top: 50%;
-      border-radius: 1vw;
-      -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-      -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-      box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
-
-@keyframes rule3Animation {
-  50% {
-    left: 37.5vw; }
-  60% {
-    left: 39.5vw; }
-  70% {
-    left: 35.5vw; }
-  80% {
-    left: 39.5vw; }
-  90% {
-    left: 35.5vw; }
-  100% {
-    left: 37.5vw; } }
-      .rule3 .rule1Image .gameCard.type21red {
-        left: 37.5vw;
-        width: 25vw;
-        height: 25vw;
-        margin-top: -12.5vw;
-        z-index: 3;
-        background-color: #ff5c00;
-        -webkit-box-shadow: -2vw 2vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-        -moz-box-shadow: -2vw 2vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-        box-shadow: -2vw 2vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-        animation-name: rule3Animation;
-        animation-duration: 2s;
-        animation-iteration-count: infinite; }
-        .rule3 .rule1Image .gameCard.type21red .innerCard {
-          position: absolute;
-          margin: 1vw 1vw 1vw 1vw;
-          width: 23vw;
-          height: 23vw;
-          background-color: #E9E4D9;
-          border-radius: 1vw;
-          z-index: 4; }
-      .rule3 .rule1Image .gameCard.type20green {
-        left: 5vw;
-        width: 23vw;
-        height: 23vw;
-        margin-top: -11.5vw;
-        z-index: 3;
-        background-color: #00ffb0; }
-        .rule3 .rule1Image .gameCard.type20green .innerCard {
-          position: absolute;
-          margin: 1vw 1vw 1vw 1vw;
-          width: 21vw;
-          height: 21vw;
-          background-color: #E9E4D9;
-          border-radius: 1vw;
-          z-index: 4; }
-      .rule3 .rule1Image .gameCard.type1 {
-        left: 8vw;
-        width: 23vw;
-        height: 23vw;
-        margin-top: -11.5vw;
-        z-index: 3;
-        background-color: #e9df00; }
-        .rule3 .rule1Image .gameCard.type1 .innerCard {
-          position: absolute;
-          margin: 1vw 1vw 1vw 1vw;
-          width: 21vw;
-          height: 21vw;
-          background-color: #E9E4D9;
-          border-radius: 1vw;
-          z-index: 4; }
-    .rule3 .rule1Image .cardNumber {
-      text-align: center;
-      font-family: Bruno Ace SC; }
-      .rule3 .rule1Image .cardNumber.firstCard {
-        font-size: 5vw;
-        line-height: 24vw;
-        z-index: 5; }
-      .rule3 .rule1Image .cardNumber.secondCard {
-        font-size: 4.5vw;
-        line-height: 23vw;
-        z-index: 4; }
-      .rule3 .rule1Image .cardNumber.thirdCard {
-        font-size: 4.5vw;
-        line-height: 23vw;
-        z-index: 3; }
-
-.startButton {
-  position: relative;
-  height: 4vh; }
-
-@keyframes startButtonAnimation {
-  from {
-    background-color: floralwhite; }
-  to {
-    background-color: #00ffb0; } }
-  .startButton a {
-    animation-name: startButtonAnimation;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    text-align: center;
-    font-family: Bruno Ace SC;
-    font-size: 3vh;
-    width: 45vw;
-    margin: 1vh auto 0 auto;
-    line-height: 4vh;
-    border: 1vw solid #00ffb0;
-    border-radius: 15vw;
-    -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-    box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-    background-color: floralwhite; }
-  .startButton a:active {
-    background-color: #00ffb0; }
-
-.rankings {
-  height: 48vh; }
-  .rankings .rankingText {
-    padding-top: 2vh;
-    width: 100%;
-    font-family: Bruno Ace SC;
-    font-size: 5vw;
-    text-align: center; }
-  .rankings .rankingTable {
-    padding-left: 10%;
-    width: 90%;
-    height: 35vh; }
-
-.mainGame {
-  max-width: 100vw;
-  height: 30vh;
-  position: relative;
-  overflow-x: hidden; }
-  .mainGame .moveOrder {
-    width: 100%;
-    height: 14vh;
-    margin-bottom: -7vh; }
-    .mainGame .moveOrder .startingCard {
-      position: absolute;
-      left: 50%;
-      margin-left: -7vh;
-      width: 14vh;
-      height: 14vh;
-      z-index: 2;
-      background-color: #00ffb0;
-      border-radius: 1vh; }
-      .mainGame .moveOrder .startingCard .innerCard {
-        position: absolute;
-        margin: 0.8vh 0.8vh 0.8vh 0.8vh;
-        width: 12.4vh;
-        height: 12.4vh;
-        background-color: #E9E4D9;
-        border-radius: 0.5vh;
-        z-index: 3; }
-        .mainGame .moveOrder .startingCard .innerCard .startingCardNumber {
-          text-align: center;
-          font-family: Bruno Ace SC;
-          font-size: 3vh;
-          line-height: 13vh;
-          z-index: 5; }
-    .mainGame .moveOrder .orderingCard {
-      position: absolute;
-      left: 50%;
-      margin-left: -10vh;
-      width: 20vh;
-      height: 14vh;
-      background-color: #00ffb0;
-      border-radius: 1vh; }
-      .mainGame .moveOrder .orderingCard .innerCard {
-        position: absolute;
-        margin: 0.5vh 0.5vh 0.5vh 0.5vh;
-        width: 19vh;
-        height: 13vh;
-        background-color: #E9E4D9;
-        border-radius: 0.5vh; }
-        .mainGame .moveOrder .orderingCard .innerCard .orderingCardText {
-          text-align: center;
-          font-family: Bruno Ace SC;
-          font-size: 2vh;
-          line-height: 7vh; }
-  .mainGame .cardsRow {
-    height: 23vh;
-    margin-left: -5vw;
-    margin-right: -5vw;
-    width: 110vw;
-    background-color: #c4c4c4;
-    border: 1vw solid #00ffb0;
-    border-left-color: transparent;
-    border-right-color: transparent;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-
-.playCard {
-  flex: 1;
-  max-width: 25vw;
-  height: 25vw;
-  background-color: #e9df00;
-  margin: 0 3vw 0 3vw; }
-
-@keyframes selected {
-  from {
-    transform: translate(0, 0); }
-  to {
-    transform: translate(0, -10%); } }
-  .playCard.selected {
-    background-color: #00ffb0; }
-  .playCard.redCard {
-    background-color: #ff5c00; }
-
-@keyframes fadeOut {
-  from {
-    opacity: 1; }
-  to {
-    opacity: 0; } }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-.fadeIn {
-  animation-name: fadeIn;
-  animation-timing-function: ease-in;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards; }
-
-.fadeOut {
-  animation-name: fadeOut;
-  animation-timing-function: ease-in;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards; }
-
-.underGameText {
-  position: relative;
-  width: 100%;
-  height: 15vh; }
-  .underGameText .orderAskText {
-    padding-top: 2vh;
-    width: 100%;
-    font-family: Bruno Ace SC;
-    font-size: 5vw;
-    text-align: center; }
-  .underGameText .orderBtn {
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    font-family: Bruno Ace SC;
-    font-size: 2vh;
-    width: 30vw;
-    height: 5vh;
-    line-height: 4vh;
-    border: 1vw solid #00ffb0;
-    border-radius: 15vw;
-    -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-    box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-    background-color: floralwhite; }
-
-@keyframes orderSelectAnimationFirst {
-  from {
-    background-color: #00ffb0; }
-  to {
-    background-color: floralwhite; } }
-
-@keyframes orderSelectAnimationSecond {
-  from {
-    background-color: floralwhite; }
-  to {
-    background-color: #00ffb0; } }
-    .underGameText .orderBtn.first {
-      margin-left: 15vw;
-      animation-name: orderSelectAnimationFirst;
-      animation-duration: 1s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      animation-timing-function: ease-out; }
-    .underGameText .orderBtn.second {
-      margin-left: 55vw;
-      animation-name: orderSelectAnimationSecond;
-      animation-duration: 1s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      animation-timing-function: ease-in; }
-
-.gameOrderingControls {
-  position: relative;
-  width: 100%;
-  height: 15vh; }
-  .gameOrderingControls .orderBtn {
-    position: absolute;
-    top: 50%;
-    left: 35vw;
-    text-align: center;
-    font-family: Bruno Ace SC;
-    font-size: 2vh;
-    width: 30vw;
-    height: 5vh;
-    line-height: 4vh;
-    border: 1vw solid #00ffb0;
-    border-radius: 15vw;
-    -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-    box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
-    background-color: floralwhite; }
-
-@keyframes orderSelectAnimation {
-  from {
-    background-color: #00ffb0; }
-  to {
-    background-color: floralwhite; } }
-    .gameOrderingControls .orderBtn.confirmation {
-      animation-name: orderSelectAnimation;
-      animation-duration: 1s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      animation-timing-function: ease-out; }
-    .gameOrderingControls .orderBtn.waiting {
-      border-color: floralwhite; }
-
-@media (min-width: 1025px) {
+@media all {
   #cardsGroup {
-    padding: 0;
-    height: 100vh;
-    position: relative; }
+    padding: 0 5vw 0 0;
+    height: 40vh;
+    position: relative;
+    width: 100vw; }
   .gameCard {
     position: relative;
     top: 50%;
-    border-radius: 2vh;
+    border-radius: 2vw;
     -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
     -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
     box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
-  @keyframes card21AnimWide {
+  @keyframes card21Anim {
     from {
-      margin-right: 15vw; }
+      margin-right: 30vw;
+      margin-left: -30vw; }
     to {
-      margin-right: 0vw; } }
-  @keyframes card20AnimWide {
-    from {
-      margin-right: -15vw;
-      margin-left: -15vw; }
-    to {
-      margin-right: -5vw;
+      margin-right: 0vw;
       margin-left: 0vw; } }
-  @keyframes card19AnimWide {
+  @keyframes card19Anim {
     from {
-      margin-right: -15vw; }
+      margin-left: 25vw; }
     to {
-      margin-right: -5vw; } }
+      margin-left: 3vw; } }
     .gameCard.type21 {
       float: right;
-      width: 40vh;
-      height: 40vh;
-      margin-top: -27.5vh;
+      width: 40vw;
+      height: 40vw;
+      margin-top: -20vw;
       z-index: 3;
-      animation-name: card21AnimWide;
+      animation-name: card21Anim;
       animation-duration: 2s;
       animation-timing-function: ease-out;
       background-color: #00ffb0; }
       .gameCard.type21 .innerCard {
         position: absolute;
-        margin: 1.5vh 1.5vh 1.5vh 1.5vh;
-        width: 37vh;
-        height: 37vh;
+        margin: 2vw 2vw 2vw 2vw;
+        width: 36vw;
+        height: 36vw;
         background-color: #E9E4D9;
-        border-radius: 1vh;
+        border-radius: 1vw;
         z-index: 4; }
     .gameCard.type20 {
       float: right;
-      margin: -25vh -5vw 0 0;
-      width: 35vh;
-      height: 35vh;
+      margin: 2.5vw -5vw 0 -30vw;
+      width: 35vw;
+      height: 35vw;
+      margin-top: -17.5vw;
       z-index: 2;
-      animation-name: card20AnimWide;
-      animation-duration: 2s;
-      animation-timing-function: ease-out;
       background-color: #e9df00; }
       .gameCard.type20 .innerCard {
         position: absolute;
-        margin: 1.25vh 1.25vh 1.25vh 1.25vh;
-        width: 32.5vh;
-        height: 32.5vh;
+        margin: 1.75vw 1.75vw 1.75vw 1.75vw;
+        width: 31.5vw;
+        height: 31.5vw;
         background-color: #E9E4D9;
-        border-radius: 1vh;
+        border-radius: 1vw;
         z-index: 4; }
     .gameCard.type19 {
-      float: right;
-      margin: -22.5vh -5vw 0 3vw;
-      width: 30vh;
-      height: 30vh;
+      float: left;
+      margin: 5vw -30vw 0 3vw;
+      width: 30vw;
+      height: 30vw;
+      margin-top: -15vw;
       z-index: 1;
-      animation-name: card19AnimWide;
+      animation-name: card19Anim;
       animation-duration: 2s;
       animation-timing-function: ease-out;
       background-color: #e9df00; }
       .gameCard.type19 .innerCard {
         position: absolute;
-        margin: 1vh 1vh 1vh 1vh;
-        width: 28vh;
-        height: 28vh;
+        margin: 1.5vw 1.5vw 1.5vw 1.5vw;
+        width: 27vw;
+        height: 27vw;
         background-color: #E9E4D9;
-        border-radius: 1vh;
+        border-radius: 1vw;
         z-index: 4; }
   .cardNumber {
     text-align: center;
     font-family: Bruno Ace SC; }
     .cardNumber.firstCard {
-      font-size: 8vh;
-      line-height: 38vh;
+      font-size: 9.5vw;
+      line-height: 38vw;
       z-index: 5; }
     .cardNumber.secondCard {
-      font-size: 7.5vh;
-      line-height: 33vh;
+      font-size: 8.4vw;
+      line-height: 33vw;
       z-index: 4; }
     .cardNumber.thirdCard {
-      font-size: 7vh;
-      line-height: 28vh;
+      font-size: 7.2vw;
+      line-height: 28vw;
       z-index: 3; }
   @keyframes hpTextAnim {
     from {
@@ -841,16 +149,777 @@ a:hover {
       opacity: 1;
       padding-top: 0; } }
   #homePageText {
-    padding: 10vw 0 0 0;
+    padding: 5vh 0 0 0;
+    width: 100vw;
     height: 40vh;
     position: relative;
     font-family: Bruno Ace SC;
     text-align: center; }
     #homePageText .text1 {
-      font-size: 9vh;
+      font-size: 9vw;
       padding-bottom: 5vh; }
     #homePageText .text2 {
-      font-size: 7vh; }
+      font-size: 7vw; }
+  .textsGroup {
+    animation-name: hpTextAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
+  a {
+    color: black;
+    text-decoration: none; }
+  a:hover {
+    color: black;
+    text-decoration: none; }
+  .toRules {
+    background-color: #00ffb0;
+    bottom: 0;
+    width: 100%;
+    font-family: Bruno Ace SC;
+    height: 10vh;
+    position: absolute !important;
+    text-align: center;
+    align-items: center; }
+  @keyframes arrowDownAnimation {
+    from {
+      padding-top: 0vh; }
+    to {
+      padding-top: 0.8vh; } }
+    .toRules img {
+      animation-name: arrowDownAnimation;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate; }
+    .toRules div {
+      font-size: 5vw;
+      line-height: 5vh; }
+  .hidden {
+    opacity: 0; }
+  .showTime {
+    animation-name: ruleshowAnimation;
+    animation-duration: 1s; }
+  @keyframes ruleshowAnimation {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+  .rule1 {
+    height: 23vh; }
+    .rule1 .rule1Text {
+      line-height: 5vh;
+      font-size: 4vw;
+      text-align: center;
+      width: 100%;
+      height: 5vh;
+      font-family: Bruno Ace SC; }
+    .rule1 .rule1Image {
+      position: relative;
+      width: 100%;
+      height: 18vh;
+      background-color: #c4c4c4; }
+      .rule1 .rule1Image .gameCard {
+        position: absolute;
+        top: 50%;
+        border-radius: 1vw;
+        -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+        box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
+  @keyframes rule1Animation {
+    from {
+      margin-top: -12.5vw; }
+    to {
+      margin-top: -15.5vw; } }
+        .rule1 .rule1Image .gameCard.type3 {
+          right: 5vw;
+          width: 25vw;
+          height: 25vw;
+          margin-top: -12.5vw;
+          z-index: 3;
+          background-color: #00ffb0;
+          -webkit-box-shadow: -2vw 2vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+          -moz-box-shadow: -2vw 2vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+          box-shadow: -2vw 2vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+          animation-name: rule1Animation;
+          animation-duration: 0.5s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: ease-in-out; }
+          .rule1 .rule1Image .gameCard.type3 .innerCard {
+            position: absolute;
+            margin: 1vw 1vw 1vw 1vw;
+            width: 23vw;
+            height: 23vw;
+            background-color: #E9E4D9;
+            border-radius: 1vw;
+            z-index: 4; }
+        .rule1 .rule1Image .gameCard.type2 {
+          right: 38vw;
+          width: 23vw;
+          height: 23vw;
+          margin-top: -11.5vw;
+          z-index: 3;
+          background-color: #e9df00; }
+          .rule1 .rule1Image .gameCard.type2 .innerCard {
+            position: absolute;
+            margin: 1vw 1vw 1vw 1vw;
+            width: 21vw;
+            height: 21vw;
+            background-color: #E9E4D9;
+            border-radius: 1vw;
+            z-index: 4; }
+        .rule1 .rule1Image .gameCard.type1 {
+          left: 8vw;
+          width: 23vw;
+          height: 23vw;
+          margin-top: -11.5vw;
+          z-index: 3;
+          background-color: #e9df00; }
+          .rule1 .rule1Image .gameCard.type1 .innerCard {
+            position: absolute;
+            margin: 1vw 1vw 1vw 1vw;
+            width: 21vw;
+            height: 21vw;
+            background-color: #E9E4D9;
+            border-radius: 1vw;
+            z-index: 4; }
+      .rule1 .rule1Image .cardNumber {
+        text-align: center;
+        font-family: Bruno Ace SC; }
+        .rule1 .rule1Image .cardNumber.firstCard {
+          font-size: 5vw;
+          line-height: 23vw;
+          z-index: 5; }
+        .rule1 .rule1Image .cardNumber.secondCard {
+          font-size: 4.5vw;
+          line-height: 23vw;
+          z-index: 4; }
+        .rule1 .rule1Image .cardNumber.thirdCard {
+          font-size: 4.5vw;
+          line-height: 23vw;
+          z-index: 3; }
+  .rule2 {
+    height: 32vh; }
+    .rule2 .rule1Text {
+      padding-top: 2vh;
+      font-size: 4vw;
+      text-align: center;
+      width: 100%;
+      height: 12vh;
+      font-family: Bruno Ace SC; }
+    .rule2 .rule1Image {
+      position: relative;
+      width: 100%;
+      height: 18vh;
+      background-color: #c4c4c4; }
+      .rule2 .rule1Image .gameCard {
+        position: absolute;
+        top: 50%;
+        border-radius: 1vw;
+        -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+        box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
+        .rule2 .rule1Image .gameCard.type3 {
+          left: 10vw;
+          width: 15vw;
+          height: 15vw;
+          margin-top: -7.5vw;
+          z-index: 3;
+          background-color: #00ffb0;
+          -webkit-box-shadow: -1.5vw 1.5vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+          -moz-box-shadow: -1.5vw 1.5vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+          box-shadow: -1.5vw 1.5vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
+          .rule2 .rule1Image .gameCard.type3 .innerCard {
+            position: absolute;
+            margin: 0.5vw 0.5vw 0.5vw 0.5vw;
+            width: 14vw;
+            height: 14vw;
+            background-color: #E9E4D9;
+            border-radius: 1vw;
+            z-index: 4; }
+        .rule2 .rule1Image .gameCard.typeYellow {
+          width: 13vw;
+          height: 13vw;
+          margin-top: -6.5vw;
+          z-index: 3;
+          background-color: #e9df00; }
+          .rule2 .rule1Image .gameCard.typeYellow .innerCard {
+            position: absolute;
+            margin: 0.4vw 0.4vw 0.4vw 0.4vw;
+            width: 12vw;
+            height: 12vw;
+            background-color: #E9E4D9;
+            border-radius: 1vw;
+            z-index: 4; }
+  @keyframes cardArrowDownAnimation {
+    from {
+      margin-top: -4vh; }
+    to {
+      margin-top: -2vh; } }
+          .rule2 .rule1Image .gameCard.typeYellow img {
+            animation-name: arrowDownAnimation;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: absolute;
+            margin-top: -4vh;
+            left: 50%;
+            margin-left: -12px; }
+          .rule2 .rule1Image .gameCard.typeYellow.card4 {
+            left: 33vw; }
+          .rule2 .rule1Image .gameCard.typeYellow.card5 {
+            left: 55vw; }
+          .rule2 .rule1Image .gameCard.typeYellow.card6 {
+            left: 77vw; }
+      .rule2 .rule1Image .cardNumber {
+        text-align: center;
+        font-family: Bruno Ace SC; }
+        .rule2 .rule1Image .cardNumber.greenCard {
+          font-size: 4vw;
+          line-height: 15vw;
+          z-index: 5; }
+        .rule2 .rule1Image .cardNumber.yellowCard {
+          font-size: 3.5vw;
+          line-height: 13vw;
+          z-index: 4; }
+  .rule3 {
+    height: 32vh; }
+    .rule3 .rule1Text {
+      padding-top: 2vh;
+      font-size: 4vw;
+      text-align: center;
+      width: 100%;
+      height: 12vh;
+      font-family: Bruno Ace SC; }
+    .rule3 .rule1Image {
+      position: relative;
+      width: 100%;
+      height: 18vh;
+      background-color: #c4c4c4; }
+      .rule3 .rule1Image .gameCard {
+        position: absolute;
+        top: 50%;
+        border-radius: 1vw;
+        -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+        box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
+  @keyframes rule3Animation {
+    50% {
+      left: 37.5vw; }
+    60% {
+      left: 39.5vw; }
+    70% {
+      left: 35.5vw; }
+    80% {
+      left: 39.5vw; }
+    90% {
+      left: 35.5vw; }
+    100% {
+      left: 37.5vw; } }
+        .rule3 .rule1Image .gameCard.type21red {
+          left: 37.5vw;
+          width: 25vw;
+          height: 25vw;
+          margin-top: -12.5vw;
+          z-index: 3;
+          background-color: #ff5c00;
+          -webkit-box-shadow: -2vw 2vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+          -moz-box-shadow: -2vw 2vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+          box-shadow: -2vw 2vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+          animation-name: rule3Animation;
+          animation-duration: 2s;
+          animation-iteration-count: infinite; }
+          .rule3 .rule1Image .gameCard.type21red .innerCard {
+            position: absolute;
+            margin: 1vw 1vw 1vw 1vw;
+            width: 23vw;
+            height: 23vw;
+            background-color: #E9E4D9;
+            border-radius: 1vw;
+            z-index: 4; }
+        .rule3 .rule1Image .gameCard.type20green {
+          left: 5vw;
+          width: 23vw;
+          height: 23vw;
+          margin-top: -11.5vw;
+          z-index: 3;
+          background-color: #00ffb0; }
+          .rule3 .rule1Image .gameCard.type20green .innerCard {
+            position: absolute;
+            margin: 1vw 1vw 1vw 1vw;
+            width: 21vw;
+            height: 21vw;
+            background-color: #E9E4D9;
+            border-radius: 1vw;
+            z-index: 4; }
+        .rule3 .rule1Image .gameCard.type1 {
+          left: 8vw;
+          width: 23vw;
+          height: 23vw;
+          margin-top: -11.5vw;
+          z-index: 3;
+          background-color: #e9df00; }
+          .rule3 .rule1Image .gameCard.type1 .innerCard {
+            position: absolute;
+            margin: 1vw 1vw 1vw 1vw;
+            width: 21vw;
+            height: 21vw;
+            background-color: #E9E4D9;
+            border-radius: 1vw;
+            z-index: 4; }
+      .rule3 .rule1Image .cardNumber {
+        text-align: center;
+        font-family: Bruno Ace SC; }
+        .rule3 .rule1Image .cardNumber.firstCard {
+          font-size: 5vw;
+          line-height: 24vw;
+          z-index: 5; }
+        .rule3 .rule1Image .cardNumber.secondCard {
+          font-size: 4.5vw;
+          line-height: 23vw;
+          z-index: 4; }
+        .rule3 .rule1Image .cardNumber.thirdCard {
+          font-size: 4.5vw;
+          line-height: 23vw;
+          z-index: 3; }
+  .startButton {
+    position: relative;
+    height: 4vh; }
+  @keyframes startButtonAnimation {
+    from {
+      background-color: floralwhite; }
+    to {
+      background-color: #00ffb0; } }
+    .startButton a {
+      animation-name: startButtonAnimation;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      text-align: center;
+      font-family: Bruno Ace SC;
+      font-size: 3vh;
+      width: 45vw;
+      margin: 1vh auto 0 auto;
+      line-height: 4vh;
+      border: 1vw solid #00ffb0;
+      border-radius: 15vw;
+      -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      background-color: floralwhite; }
+    .startButton a:active {
+      background-color: #00ffb0; }
+  .rankings {
+    height: 48vh; }
+    .rankings .rankingText {
+      padding-top: 2vh;
+      width: 100%;
+      font-family: Bruno Ace SC;
+      font-size: 5vw;
+      text-align: center; }
+    .rankings .rankingTable {
+      padding-left: 10%;
+      width: 90%;
+      height: 35vh; }
+  table {
+    text-align: center;
+    font-family: Bruno Ace SC;
+    font-size: 15px;
+    border-collapse: collapse;
+    width: 100%; }
+  thead, tbody {
+    display: block; }
+  thead {
+    padding: 1vw;
+    background-color: #00ffb0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; }
+  tbody {
+    height: 30vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #00ffb0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; }
+  tr {
+    display: block;
+    padding: 1vw; }
+    tr td, tr th {
+      text-align: center;
+      display: block; }
+    tr td {
+      border-bottom: 1px solid #dddddd; }
+  .mainGame {
+    height: 45vh;
+    position: relative;
+    overflow-x: hidden; }
+    .mainGame .moveOrder {
+      width: 100%;
+      height: 14vh;
+      margin-bottom: -7vh; }
+      .mainGame .moveOrder .startingCard {
+        position: absolute;
+        left: 50%;
+        margin-left: -7vh;
+        width: 14vh;
+        height: 14vh;
+        z-index: 2;
+        background-color: #00ffb0;
+        border-radius: 1vh; }
+        .mainGame .moveOrder .startingCard .innerCard {
+          position: absolute;
+          margin: 0.8vh 0.8vh 0.8vh 0.8vh;
+          width: 12.4vh;
+          height: 12.4vh;
+          background-color: #E9E4D9;
+          border-radius: 0.5vh;
+          z-index: 3; }
+          .mainGame .moveOrder .startingCard .innerCard .startingCardNumber {
+            text-align: center;
+            font-family: Bruno Ace SC;
+            font-size: 3vh;
+            line-height: 13vh;
+            z-index: 5; }
+      .mainGame .moveOrder .orderingCard {
+        position: relative;
+        left: 50%;
+        margin-left: -10vh;
+        width: 20vh;
+        height: 14vh;
+        background-color: #00ffb0;
+        border-radius: 1vh;
+        z-index: 0; }
+        .mainGame .moveOrder .orderingCard .innerCard {
+          position: absolute;
+          margin: 0.5vh 0.5vh 0.5vh 0.5vh;
+          width: 19vh;
+          height: 13vh;
+          background-color: #E9E4D9;
+          border-radius: 0.5vh; }
+          .mainGame .moveOrder .orderingCard .innerCard .orderingCardText {
+            text-align: center;
+            font-family: Bruno Ace SC;
+            font-size: 2vh;
+            line-height: 7vh; }
+    .mainGame .cardsRow {
+      position: relative;
+      font-family: Bruno Ace SC;
+      z-index: 1;
+      height: 23vh;
+      margin-left: -5vw;
+      margin-right: -5vw;
+      background-color: #c4c4c4;
+      border: 1vw solid #00ffb0;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .mainGame .cardsRow .gamePlayedMessage {
+        margin: 10vw;
+        font-family: Bruno Ace SC;
+        font-size: 5vw;
+        text-align: center; }
+  .gameOverMessage {
+    flex: auto;
+    height: 20vh;
+    border-radius: 1vw; }
+    .gameOverMessage.winner {
+      background-color: #00ffb0; }
+    .gameOverMessage.loser {
+      background-color: #ff5c00; }
+    .gameOverMessage .innerCard {
+      position: absolute;
+      margin: 1vh 2vw 1vh 2vw;
+      width: 100%;
+      height: 18vh;
+      border-radius: 0.5vw;
+      z-index: 2;
+      text-align: center;
+      font-family: Bruno Ace SC;
+      font-size: 5vw;
+      line-height: 18vh; }
+  .nameField {
+    position: relative;
+    width: 100%;
+    height: 15vh; }
+    .nameField .confirmButton {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      margin-left: -20vw;
+      text-align: center;
+      font-family: Bruno Ace SC;
+      font-size: 2.5vh;
+      width: 40vw;
+      height: 5vh;
+      line-height: 4vh;
+      border-radius: 15vw;
+      -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
+      .nameField .confirmButton.winner {
+        border: 1vw solid #00ffb0;
+        background-color: #00ffb0; }
+      .nameField .confirmButton.loser {
+        border: 1vw solid #e9df00;
+        background-color: #e9df00;
+        top: 30%; }
+    .nameField .textField {
+      position: absolute;
+      top: 2vh;
+      left: 50%;
+      margin-left: -30vw;
+      width: 60vw;
+      font-family: Bruno Ace SC;
+      font-size: 5vw;
+      text-align: center;
+      border: 1vw solid #00ffb0;
+      border-radius: 1vw; }
+  .playCard {
+    flex: 1;
+    max-width: 25vw;
+    height: 25vw;
+    background-color: #e9df00;
+    margin: 0 3vw 0 3vw;
+    border-radius: 1vw;
+    -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+    box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
+    .playCard.selected {
+      background-color: #00ffb0;
+      transform: translate(0, -10%); }
+    .playCard.redCard {
+      background-color: #ff5c00; }
+      .playCard.redCard .innerCard {
+        background-color: #ff5c00; }
+    .playCard .innerCard {
+      position: absolute;
+      margin: 1vw 1vw 1vw 1vw;
+      width: 23vw;
+      height: 23vw;
+      background-color: #E9E4D9;
+      border-radius: 0.5vw;
+      z-index: 2;
+      text-align: center;
+      font-family: Bruno Ace SC;
+      font-size: 6vw;
+      line-height: 23vw; }
+  @keyframes fadeOut {
+    from {
+      opacity: 1; }
+    to {
+      opacity: 0; } }
+  @keyframes fadeIn {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+  .fadeIn {
+    animation-name: fadeIn;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards; }
+  .fadeOut {
+    animation-name: fadeOut;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards; }
+  .underGameText {
+    position: relative;
+    width: 100%;
+    height: 15vh; }
+    .underGameText .orderAskText {
+      padding-top: 2vh;
+      width: 100%;
+      font-family: Bruno Ace SC;
+      font-size: 5vw;
+      text-align: center; }
+    .underGameText .orderBtn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      font-family: Bruno Ace SC;
+      font-size: 2vh;
+      width: 30vw;
+      height: 5vh;
+      line-height: 4vh;
+      border: 1vw solid #00ffb0;
+      border-radius: 15vw;
+      -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      background-color: floralwhite; }
+  @keyframes orderSelectAnimationFirst {
+    from {
+      background-color: #00ffb0; }
+    to {
+      background-color: floralwhite; } }
+  @keyframes orderSelectAnimationSecond {
+    from {
+      background-color: floralwhite; }
+    to {
+      background-color: #00ffb0; } }
+      .underGameText .orderBtn.first {
+        margin-left: -35vw;
+        animation-name: orderSelectAnimationFirst;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-out; }
+      .underGameText .orderBtn.second {
+        margin-left: 5vw;
+        animation-name: orderSelectAnimationSecond;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in; }
+  .gameOrderingControls {
+    position: relative;
+    width: 100%;
+    height: 15vh; }
+    .gameOrderingControls .orderBtn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -15vw;
+      text-align: center;
+      font-family: Bruno Ace SC;
+      font-size: 2vh;
+      width: 30vw;
+      height: 5vh;
+      line-height: 4vh;
+      border: 1vw solid #00ffb0;
+      border-radius: 15vw;
+      -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      background-color: floralwhite; }
+  @keyframes orderSelectAnimation {
+    from {
+      background-color: #00ffb0; }
+    to {
+      background-color: floralwhite; } }
+      .gameOrderingControls .orderBtn.confirmation {
+        animation-name: orderSelectAnimation;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-out; }
+      .gameOrderingControls .orderBtn.waiting {
+        border-color: floralwhite; } }
+
+@media (min-width: 1024px) {
+  #cardsGroup {
+    padding: 0;
+    height: 40vh;
+    position: relative;
+    width: 60vw;
+    left: 20vw; }
+  .gameCard {
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    left: -50%;
+    border-radius: 2vh;
+    -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+    box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
+  @keyframes card21AnimWide {
+    from {
+      margin-right: -17vh; }
+    to {
+      margin-right: -50vh; } }
+  @keyframes card19AnimWide {
+    from {
+      margin-right: -32vh; }
+    to {
+      margin-right: -1vh; } }
+    .gameCard.type21 {
+      float: right;
+      width: 35vh;
+      height: 35vh;
+      margin: -17.5vh -50vh 0 -15vh;
+      z-index: 3;
+      animation-name: card21AnimWide;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+      background-color: #00ffb0; }
+      .gameCard.type21 .innerCard {
+        position: absolute;
+        margin: 1vh 1vh 1vh 1vh;
+        width: 33vh;
+        height: 33vh;
+        background-color: #E9E4D9;
+        border-radius: 1vh;
+        z-index: 4; }
+    .gameCard.type20 {
+      float: right;
+      margin: -16vh -16vh 0 0;
+      width: 32.5vh;
+      height: 32.5vh;
+      z-index: 2;
+      background-color: #e9df00; }
+      .gameCard.type20 .innerCard {
+        position: absolute;
+        margin: 0.75vh 0.75vh 0.75vh 0.75vh;
+        width: 31vh;
+        height: 31vh;
+        background-color: #E9E4D9;
+        border-radius: 1vh;
+        z-index: 4; }
+    .gameCard.type19 {
+      float: right;
+      margin: -15vh -1vh 0 0;
+      width: 30vh;
+      height: 30vh;
+      z-index: 1;
+      animation-name: card19AnimWide;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+      background-color: #e9df00; }
+      .gameCard.type19 .innerCard {
+        position: absolute;
+        margin: 0.5vh 0.5vh 0.5vh 0.5vh;
+        width: 29vh;
+        height: 29vh;
+        background-color: #E9E4D9;
+        border-radius: 1vh;
+        z-index: 4; }
+  .cardNumber {
+    text-align: center;
+    font-family: Bruno Ace SC; }
+    .cardNumber.firstCard {
+      font-size: 8vh;
+      line-height: 33vh;
+      z-index: 5; }
+    .cardNumber.secondCard {
+      font-size: 7.5vh;
+      line-height: 31vh;
+      z-index: 4; }
+    .cardNumber.thirdCard {
+      font-size: 7vh;
+      line-height: 29vh;
+      z-index: 3; }
+  @keyframes hpTextAnim {
+    from {
+      opacity: 0;
+      padding-top: 10vh; }
+    to {
+      opacity: 1;
+      padding-top: 0; } }
+  #homePageText {
+    width: 60vw;
+    left: 20vw;
+    padding: 10vh 0 0 0;
+    height: 40vh;
+    position: relative;
+    font-family: Bruno Ace SC;
+    text-align: center; }
+    #homePageText .text1 {
+      font-size: 6vh;
+      padding-bottom: 5vh; }
+    #homePageText .text2 {
+      font-size: 5vh; }
   .textsGroup {
     animation-name: hpTextAnim;
     animation-duration: 2s;
@@ -875,4 +944,609 @@ a:hover {
       animation-iteration-count: infinite;
       animation-direction: alternate; }
     .toRules div {
-      font-size: 3vh; } }
+      font-size: 3vh; }
+  .rule1 {
+    height: 28vh; }
+    .rule1 .rule1Text {
+      line-height: 28vh;
+      font-size: 3vh;
+      text-align: center;
+      width: 100%;
+      height: 5vh;
+      font-family: Bruno Ace SC; }
+    .rule1 .rule1Image {
+      position: relative;
+      width: 100%;
+      height: 28vh;
+      background-color: #c4c4c4;
+      display: unset; }
+      .rule1 .rule1Image .gameCard {
+        position: absolute;
+        display: inherit;
+        top: 50%;
+        right: 0;
+        left: 0;
+        border-radius: 1vw;
+        -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+        box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
+  @keyframes rule1Animation {
+    from {
+      margin-top: -10vh; }
+    to {
+      margin-top: -12.5vh; } }
+        .rule1 .rule1Image .gameCard.type3 {
+          left: 70%;
+          max-width: 20vh;
+          height: 20vh;
+          z-index: 3;
+          background-color: #00ffb0;
+          -webkit-box-shadow: -2vw 2vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+          -moz-box-shadow: -2vw 2vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+          box-shadow: -2vw 2vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+          animation-name: rule1Animation;
+          animation-duration: 0.5s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: ease-in-out; }
+          .rule1 .rule1Image .gameCard.type3 .innerCard {
+            position: absolute;
+            margin: 1vh 1vh 1vh 1vh;
+            width: 18vh;
+            height: 18vh;
+            background-color: #E9E4D9;
+            border-radius: 1vw;
+            z-index: 4; }
+        .rule1 .rule1Image .gameCard.type2 {
+          margin-top: -10vh;
+          left: 40%;
+          max-width: 20vh;
+          height: 20vh;
+          z-index: 3;
+          background-color: #e9df00; }
+          .rule1 .rule1Image .gameCard.type2 .innerCard {
+            position: absolute;
+            margin: 1vh 1vh 1vh 1vh;
+            width: 18vh;
+            height: 18vh;
+            background-color: #E9E4D9;
+            border-radius: 1vw;
+            z-index: 4; }
+        .rule1 .rule1Image .gameCard.type1 {
+          margin-top: -10vh;
+          left: 10%;
+          max-width: 20vh;
+          height: 20vh;
+          z-index: 3;
+          background-color: #e9df00; }
+          .rule1 .rule1Image .gameCard.type1 .innerCard {
+            position: absolute;
+            margin: 1vh 1vh 1vh 1vh;
+            width: 18vh;
+            height: 18vh;
+            background-color: #E9E4D9;
+            border-radius: 1vw;
+            z-index: 4; }
+      .rule1 .rule1Image .cardNumber {
+        text-align: center;
+        font-family: Bruno Ace SC; }
+        .rule1 .rule1Image .cardNumber.firstCard {
+          font-size: 5vh;
+          line-height: 18vh;
+          z-index: 5; }
+        .rule1 .rule1Image .cardNumber.secondCard {
+          font-size: 4.5vh;
+          line-height: 18vh;
+          z-index: 4; }
+        .rule1 .rule1Image .cardNumber.thirdCard {
+          font-size: 4.5vh;
+          line-height: 18vh;
+          z-index: 3; }
+  .rule2 {
+    height: 28vh; }
+    .rule2 .rule1Text {
+      top: 20%;
+      font-size: 3vh;
+      text-align: center;
+      width: 100%;
+      height: 5vh;
+      font-family: Bruno Ace SC; }
+    .rule2 .rule1Image {
+      position: relative;
+      width: 100%;
+      height: 28vh;
+      background-color: #c4c4c4;
+      display: unset; }
+      .rule2 .rule1Image .gameCard {
+        position: absolute;
+        display: inherit;
+        top: 50%;
+        right: 0;
+        border-radius: 1vw;
+        -webkit-box-shadow: -0.8vw 0.8vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: -0.8vw 0.8vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+        box-shadow: -0.8vw 0.8vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
+        .rule2 .rule1Image .gameCard.type3 {
+          left: 5%;
+          margin-top: -9vh;
+          max-width: 18vh;
+          height: 18vh;
+          z-index: 3;
+          background-color: #00ffb0;
+          -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+          -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+          box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
+          .rule2 .rule1Image .gameCard.type3 .innerCard {
+            position: absolute;
+            margin: 1vh 1vh 1vh 1vh;
+            width: 16vh;
+            height: 16vh;
+            background-color: #E9E4D9;
+            border-radius: 1vw;
+            z-index: 4; }
+        .rule2 .rule1Image .gameCard.typeYellow {
+          margin-top: -7.5vh;
+          right: 50%;
+          max-width: 15vh;
+          height: 15vh;
+          z-index: 3;
+          background-color: #e9df00; }
+          .rule2 .rule1Image .gameCard.typeYellow .innerCard {
+            position: absolute;
+            margin: 1vh 1vh 1vh 1vh;
+            width: 13vh;
+            height: 13vh;
+            background-color: #E9E4D9;
+            border-radius: 1vw;
+            z-index: 4; }
+  @keyframes cardArrowDownAnimation {
+    from {
+      margin-top: -4vh; }
+    to {
+      margin-top: -2vh; } }
+          .rule2 .rule1Image .gameCard.typeYellow img {
+            animation-name: arrowDownAnimation;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: absolute;
+            margin-top: -4vh;
+            left: 50%;
+            margin-left: -12px; }
+          .rule2 .rule1Image .gameCard.typeYellow.card4 {
+            left: 30%; }
+          .rule2 .rule1Image .gameCard.typeYellow.card5 {
+            left: 52%; }
+          .rule2 .rule1Image .gameCard.typeYellow.card6 {
+            left: 74%; }
+      .rule2 .rule1Image .cardNumber {
+        text-align: center;
+        font-family: Bruno Ace SC; }
+        .rule2 .rule1Image .cardNumber.greenCard {
+          font-size: 4vh;
+          line-height: 17vh;
+          z-index: 5; }
+        .rule2 .rule1Image .cardNumber.yellowCard {
+          font-size: 3.5vh;
+          line-height: 13vh;
+          z-index: 4; }
+  .rule3 {
+    height: 28vh; }
+    .rule3 .rule1Text {
+      top: 20%;
+      font-size: 3vh;
+      text-align: center;
+      width: 100%;
+      height: 5vh;
+      font-family: Bruno Ace SC; }
+    .rule3 .rule1Image {
+      position: relative;
+      width: 100%;
+      height: 28vh;
+      background-color: #c4c4c4;
+      display: unset; }
+      .rule3 .rule1Image .gameCard {
+        position: absolute;
+        display: inherit;
+        top: 50%;
+        right: 0;
+        left: 0;
+        border-radius: 1vw;
+        -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+        box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
+  @keyframes rule3Animation {
+    50% {
+      left: 50%; }
+    60% {
+      left: 45%; }
+    70% {
+      left: 55%; }
+    80% {
+      left: 45%; }
+    90% {
+      left: 55%; }
+    100% {
+      left: 50%; } }
+        .rule3 .rule1Image .gameCard.type21red {
+          left: 50%;
+          margin-top: -10vh;
+          max-width: 20vh;
+          height: 20vh;
+          z-index: 3;
+          background-color: #ff5c00;
+          -webkit-box-shadow: -2vh 2vh 0.5vh 0 rgba(0, 0, 0, 0.25);
+          -moz-box-shadow: -2vh 2vh 0.5vh 0 rgba(0, 0, 0, 0.25);
+          box-shadow: -2vh 2vh 0.5vh 0 rgba(0, 0, 0, 0.25);
+          animation-name: rule3Animation;
+          animation-duration: 2s;
+          animation-iteration-count: infinite; }
+          .rule3 .rule1Image .gameCard.type21red .innerCard {
+            position: absolute;
+            margin: 1vh 1vh 1vh 1vh;
+            width: 18vh;
+            height: 18vh;
+            background-color: #E9E4D9;
+            border-radius: 1vw;
+            z-index: 4; }
+        .rule3 .rule1Image .gameCard.type20green {
+          margin-top: -10vh;
+          left: 10%;
+          max-width: 20vh;
+          height: 20vh;
+          z-index: 3;
+          background-color: #00ffb0; }
+          .rule3 .rule1Image .gameCard.type20green .innerCard {
+            position: absolute;
+            margin: 1vh 1vh 1vh 1vh;
+            width: 18vh;
+            height: 18vh;
+            background-color: #E9E4D9;
+            border-radius: 1vw;
+            z-index: 4; }
+      .rule3 .rule1Image .cardNumber {
+        text-align: center;
+        font-family: Bruno Ace SC; }
+        .rule3 .rule1Image .cardNumber.firstCard {
+          font-size: 5vh;
+          line-height: 20vh;
+          z-index: 5; }
+  .startButton {
+    position: relative;
+    height: 4vh; }
+  @keyframes startButtonAnimation {
+    from {
+      background-color: floralwhite; }
+    to {
+      background-color: #00ffb0; } }
+    .startButton a {
+      animation-name: startButtonAnimation;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      text-align: center;
+      font-family: Bruno Ace SC;
+      font-size: 3vh;
+      width: 45vw;
+      margin: 1vh auto 0 auto;
+      line-height: 4vh;
+      border: 1vh solid #00ffb0;
+      border-radius: 15vw;
+      -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      background-color: floralwhite; }
+    .startButton a:active {
+      background-color: #00ffb0; }
+  .rankings {
+    height: 94vh;
+    width: 100%; }
+    .rankings .rankingText {
+      padding-top: 2vh;
+      width: 100%;
+      font-family: Bruno Ace SC;
+      font-size: 5vh;
+      text-align: center; }
+    .rankings .rankingTable {
+      padding-left: 10%;
+      width: 90%; }
+  table {
+    text-align: center;
+    font-family: Bruno Ace SC;
+    font-size: 2.5vh;
+    border-collapse: collapse;
+    width: 100%; }
+  thead, tbody {
+    display: block; }
+  thead {
+    padding: 1vw;
+    background-color: #00ffb0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; }
+  tbody {
+    height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #00ffb0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; }
+  tr {
+    display: block;
+    padding: 1vw; }
+    tr td, tr th {
+      text-align: center;
+      display: block; }
+    tr td {
+      border-bottom: 1px solid #dddddd; }
+  .mainGame {
+    top: 50%;
+    height: 94vh;
+    position: relative;
+    overflow-x: hidden; }
+    .mainGame .moveOrder {
+      top: 50%;
+      width: 100%;
+      height: 14vh;
+      margin-bottom: -7vh; }
+      .mainGame .moveOrder .startingCard {
+        top: 25%;
+        position: absolute;
+        left: 50%;
+        margin-left: -8vh;
+        width: 16vh;
+        height: 16vh;
+        z-index: 2;
+        background-color: #00ffb0;
+        border-radius: 1vh; }
+        .mainGame .moveOrder .startingCard .innerCard {
+          position: absolute;
+          margin: 1vh 1vh 1vh 1vh;
+          width: 14vh;
+          height: 14vh;
+          background-color: #E9E4D9;
+          border-radius: 0.5vh;
+          z-index: 3; }
+          .mainGame .moveOrder .startingCard .innerCard .startingCardNumber {
+            text-align: center;
+            font-family: Bruno Ace SC;
+            font-size: 3vh;
+            line-height: 14vh;
+            z-index: 5; }
+      .mainGame .moveOrder .orderingCard {
+        top: 25%;
+        position: absolute;
+        left: 50%;
+        margin-left: -10vh;
+        width: 20vh;
+        height: 14vh;
+        background-color: #00ffb0;
+        border-radius: 1vh;
+        z-index: 0; }
+        .mainGame .moveOrder .orderingCard .innerCard {
+          position: absolute;
+          margin: 0.5vh 0.5vh 0.5vh 0.5vh;
+          width: 19vh;
+          height: 13vh;
+          background-color: #E9E4D9;
+          border-radius: 0.5vh; }
+          .mainGame .moveOrder .orderingCard .innerCard .orderingCardText {
+            text-align: center;
+            font-family: Bruno Ace SC;
+            font-size: 2vh;
+            line-height: 7vh; }
+    .mainGame .cardsRow {
+      top: 25%;
+      position: relative;
+      font-family: Bruno Ace SC;
+      z-index: 1;
+      height: 30vh;
+      margin-left: -5vw;
+      margin-right: -5vw;
+      background-color: #c4c4c4;
+      border: 1vw solid #00ffb0;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .mainGame .cardsRow .gamePlayedMessage {
+        margin: 10vw;
+        font-family: Bruno Ace SC;
+        font-size: 5vh;
+        text-align: center; }
+  .gameOverMessage {
+    flex: auto;
+    height: 20vh;
+    border-radius: 1vw; }
+    .gameOverMessage.winner {
+      background-color: #00ffb0; }
+    .gameOverMessage.loser {
+      background-color: #ff5c00; }
+    .gameOverMessage .innerCard {
+      position: absolute;
+      margin: 1vh 2vw 1vh 2vw;
+      width: 100%;
+      height: 18vh;
+      border-radius: 0.5vw;
+      z-index: 2;
+      text-align: center;
+      font-family: Bruno Ace SC;
+      font-size: 5vh;
+      line-height: 18vh; }
+  .nameField {
+    position: relative;
+    width: 100%;
+    top: 30vh;
+    height: 25vh; }
+    .nameField .confirmButton {
+      cursor: pointer;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      margin-left: -10vw;
+      text-align: center;
+      font-family: Bruno Ace SC;
+      font-size: 2.5vh;
+      width: 20vw;
+      height: 7vh;
+      line-height: 4vh;
+      border-radius: 15vw;
+      -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
+      .nameField .confirmButton.winner {
+        border: 1vw solid #00ffb0;
+        background-color: #00ffb0; }
+      .nameField .confirmButton.loser {
+        border: 1vw solid #e9df00;
+        background-color: #e9df00;
+        top: 30%; }
+    .nameField .textField {
+      position: absolute;
+      top: 2vh;
+      left: 50%;
+      margin-left: -15vw;
+      width: 30vw;
+      font-family: Bruno Ace SC;
+      font-size: 5vh;
+      text-align: center;
+      border: 1vh solid #00ffb0;
+      border-radius: 1vw; }
+  .playCard {
+    cursor: pointer;
+    flex: 1;
+    max-width: 20vh;
+    height: 20vh;
+    background-color: #e9df00;
+    margin: 0 1.5vw 0 1.5vw;
+    border-radius: 1vw;
+    -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+    box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25); }
+    .playCard.selected {
+      background-color: #00ffb0;
+      transform: translate(0, -10%); }
+    .playCard.redCard {
+      background-color: #ff5c00; }
+      .playCard.redCard .innerCard {
+        background-color: #ff5c00; }
+    .playCard .innerCard {
+      position: absolute;
+      margin: 1vh 1vh 1vh 1vh;
+      width: 18vh;
+      height: 18vh;
+      background-color: #E9E4D9;
+      border-radius: 0.5vw;
+      z-index: 2;
+      text-align: center;
+      font-family: Bruno Ace SC;
+      font-size: 4vh;
+      line-height: 18vh; }
+  @keyframes fadeOut {
+    from {
+      opacity: 1; }
+    to {
+      opacity: 0; } }
+  @keyframes fadeIn {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+  .fadeIn {
+    animation-name: fadeIn;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards; }
+  .fadeOut {
+    animation-name: fadeOut;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards; }
+  .underGameText {
+    position: relative;
+    width: 100%;
+    top: 30vh;
+    height: 25vh; }
+    .underGameText .orderAskText {
+      padding-top: 2vh;
+      width: 100%;
+      font-family: Bruno Ace SC;
+      font-size: 5vh;
+      text-align: center; }
+    .underGameText .orderBtn {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      font-family: Bruno Ace SC;
+      font-size: 2vh;
+      width: 15vw;
+      height: 6vh;
+      line-height: 4vh;
+      border: 1vh solid #00ffb0;
+      border-radius: 15vw;
+      -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      background-color: floralwhite; }
+  @keyframes orderSelectAnimationFirst {
+    from {
+      background-color: #00ffb0; }
+    to {
+      background-color: floralwhite; } }
+  @keyframes orderSelectAnimationSecond {
+    from {
+      background-color: floralwhite; }
+    to {
+      background-color: #00ffb0; } }
+      .underGameText .orderBtn.first {
+        margin-left: -18vw;
+        animation-name: orderSelectAnimationFirst;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-out; }
+      .underGameText .orderBtn.second {
+        margin-left: 3vw;
+        animation-name: orderSelectAnimationSecond;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in; }
+  .gameOrderingControls {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    top: 25vh;
+    height: 25vh; }
+    .gameOrderingControls .orderBtn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -7.5vw;
+      text-align: center;
+      font-family: Bruno Ace SC;
+      font-size: 2vh;
+      width: 15vw;
+      height: 7vh;
+      line-height: 5vh;
+      border: 1vh solid #00ffb0;
+      border-radius: 15vw;
+      -webkit-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      box-shadow: -1vw 1vw 0.5vw 0 rgba(0, 0, 0, 0.25);
+      background-color: floralwhite; }
+  @keyframes orderSelectAnimation {
+    from {
+      background-color: #00ffb0; }
+    to {
+      background-color: floralwhite; } }
+      .gameOrderingControls .orderBtn.confirmation {
+        animation-name: orderSelectAnimation;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-out; }
+      .gameOrderingControls .orderBtn.waiting {
+        border-color: floralwhite; } }

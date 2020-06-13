@@ -8,7 +8,7 @@ class Home extends Component {
       <div id="homeSection" className="mySection">
         <Container fluid>
           <Row>
-            <div className="col-12 col-xl-6" id="cardsGroup">
+            <div id="cardsGroup">
               <div className="gameCard type21">
                 <div className="innerCard">
                   <h2 className="cardNumber firstCard">21</h2>
@@ -25,11 +25,11 @@ class Home extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-xl-6" id="homePageText">
+            <div id="homePageText">
               <div className="textsGroup">
                 <div className="text1">test your mind</div>
-                <div className="text2">make as few</div>
-                <div className="text2">attempts as possible</div>
+                <div className="text2">try to win</div>
+                <div className="text2">in this game</div>
               </div>
               
             </div>
